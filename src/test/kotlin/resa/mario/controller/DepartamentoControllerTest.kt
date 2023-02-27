@@ -89,11 +89,4 @@ internal class DepartamentoControllerTest {
         coVerify { service.update(any(), any()) }
     }
 
-/*    @OptIn(ExperimentalCoroutinesApi::class)
-    @Test
-    fun delete() = runTest {
-        coEvery { service.deleteById(any()) } returns entityModel
-
-        val response = controller.delete(entityModel.id.toString())
-    }*/
 }

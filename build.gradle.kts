@@ -57,6 +57,8 @@ dependencies {
 	implementation("com.auth0:java-jwt:4.2.1")
 	// Dokka
 	dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.7.20")
+	// Swagger
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2")
 }
 
 tasks.withType<KotlinCompile> {

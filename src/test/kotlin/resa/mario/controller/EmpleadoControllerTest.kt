@@ -93,10 +93,6 @@ internal class EmpleadoControllerTest {
         coVerify { service.update(any(), any()) }
     }
 
-    /*    @Test
-        fun updateAvatar() {
-        }*/
-
     @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun delete() = runTest {
