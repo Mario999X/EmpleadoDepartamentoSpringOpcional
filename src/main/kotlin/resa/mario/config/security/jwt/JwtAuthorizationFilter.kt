@@ -16,6 +16,16 @@ import java.io.IOException
 
 private val log = KotlinLogging.logger {}
 
+/**
+ * Clase encargada del filtrado de autorizaciones
+ *
+ * @property jwtTokenUtils
+ * @property service
+ * @constructor
+ * El generador y verificador de tokens, el servicio de usuarios y el AuthenticationManager
+ *
+ * @param authManager
+ */
 class JwtAuthorizationFilter(
     private val jwtTokenUtils: JwtTokenUtils,
     private val service: UsuarioServiceImpl,

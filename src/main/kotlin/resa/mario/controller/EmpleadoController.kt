@@ -20,6 +20,12 @@ import resa.mario.mappers.toEmpleado
 import resa.mario.services.empleado.EmpleadoServiceImpl
 import resa.mario.services.storage.StorageServiceImpl
 
+/**
+ * Controlador encargado de hacer las operaciones basicas de los empleados
+ *
+ * @property service
+ * @property storageService
+ */
 @RestController
 @RequestMapping(APIConfig.API_PATH + "/empleados")
 class EmpleadoController

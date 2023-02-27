@@ -5,6 +5,10 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
 
+/**
+ * Clase de configuracion para el cifrado de claves de los usuarios: Bcrypt.
+ *
+ */
 @Configuration
 class EncoderConfig {
 

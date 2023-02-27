@@ -3,6 +3,11 @@ package resa.mario.mappers
 import resa.mario.dto.EmpleadoDTO
 import resa.mario.models.Empleado
 
+/**
+ * Mapper Model -> DTO
+ *
+ * @return [EmpleadoDTO]
+ */
 fun Empleado.toDTO(): EmpleadoDTO {
     return EmpleadoDTO(
         name = name,
@@ -12,7 +17,11 @@ fun Empleado.toDTO(): EmpleadoDTO {
     )
 }
 
-
+/**
+ * Mapper DTO -> Model
+ *
+ * @return [Empleado]
+ */
 fun EmpleadoDTO.toEmpleado(): Empleado {
     return Empleado(
         name = name,

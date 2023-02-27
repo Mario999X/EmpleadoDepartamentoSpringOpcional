@@ -1,5 +1,9 @@
 package resa.mario
 
+/**
+ * @Author Mario Resa
+ */
+
 import kotlinx.coroutines.runBlocking
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
@@ -10,6 +14,11 @@ import org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories
 import resa.mario.controller.UsuarioController
 import resa.mario.db.getUsersInit
 
+/**
+ * Funcion principal del programa.
+ *
+ * @property controller
+ */
 @SpringBootApplication
 @EnableCaching
 @EnableR2dbcRepositories

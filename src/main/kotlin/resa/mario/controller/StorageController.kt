@@ -17,6 +17,11 @@ import resa.mario.config.APIConfig
 import resa.mario.services.storage.StorageServiceImpl
 import java.time.LocalDateTime
 
+/**
+ * Controlador de prueba para probar la subida de ficheros
+ *
+ * @property storageService
+ */
 @RestController
 @RequestMapping(APIConfig.API_PATH + "/storage")
 class StorageController

@@ -23,6 +23,13 @@ import resa.mario.services.usuario.UsuarioServiceImpl
 
 private val log = KotlinLogging.logger {}
 
+/**
+ * Controlador encargado de hacer las operaciones basicas de los usuarios
+ *
+ * @property service
+ * @property authenticationManager
+ * @property jwtTokenUtils
+ */
 @RestController
 @RequestMapping(APIConfig.API_PATH + "/usuarios")
 class UsuarioController

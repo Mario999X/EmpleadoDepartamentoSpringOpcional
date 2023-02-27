@@ -9,6 +9,10 @@ import java.util.*
 
 private val algorithm: Algorithm = Algorithm.HMAC512("123456")
 
+/**
+ * Clase encargada de generar y verificar los tokens de los usuarios; JWT
+ *
+ */
 @Component
 class JwtTokenUtils {
     fun create(user: Usuario): String {

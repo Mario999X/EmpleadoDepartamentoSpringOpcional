@@ -8,7 +8,16 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 import java.time.LocalDateTime
 
-@Table(name = "USUARIOS")
+/**
+ * Modelo Usuario
+ *
+ * @property id
+ * @property username
+ * @property password
+ * @property role
+ * @property createdAt
+ */
+@Table("USUARIOS")
 data class Usuario(
     @Id
     val id: Long? = null,

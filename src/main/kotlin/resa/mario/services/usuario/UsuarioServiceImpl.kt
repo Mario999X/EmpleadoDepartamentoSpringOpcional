@@ -16,6 +16,13 @@ import resa.mario.repositories.usuario.UsuarioRepository
 
 private val log = KotlinLogging.logger {}
 
+/**
+ * Servicio encargado de realizar operaciones sobre Departamentos, haciendo uso del repositorio necesario y del
+ * PasswordEncoder
+ *
+ * @property repository
+ * @property passwordEncoder
+ */
 @Service
 class UsuarioServiceImpl
 @Autowired constructor(

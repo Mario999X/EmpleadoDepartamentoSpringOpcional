@@ -8,6 +8,10 @@ import org.springframework.core.io.ClassPathResource
 import org.springframework.r2dbc.connection.init.ConnectionFactoryInitializer
 import org.springframework.r2dbc.connection.init.ResourceDatabasePopulator
 
+/**
+ * Clase de configuracion encargada de cargar el schema generado de H2 al ejecutar el programa
+ *
+ */
 @Configuration
 class LoadSchema {
 

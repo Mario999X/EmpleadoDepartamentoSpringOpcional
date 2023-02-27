@@ -15,6 +15,14 @@ import java.util.*
 
 private val log = KotlinLogging.logger {}
 
+/**
+ * Servicio de almacenamiento
+ *
+ * @constructor
+ * Ruta leida del achivo de propiedades
+ *
+ * @param path
+ */
 @Service
 class StorageServiceImpl(
     @Value("\${upload.root-location}") path: String

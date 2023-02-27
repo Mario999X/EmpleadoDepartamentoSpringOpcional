@@ -14,6 +14,12 @@ import resa.mario.config.security.jwt.JwtAuthorizationFilter
 import resa.mario.config.security.jwt.JwtTokenUtils
 import resa.mario.services.usuario.UsuarioServiceImpl
 
+/**
+ * Clase de configuracion de la seguridad de Spring; se encarga de aplicar filtros en los END_POINTS
+ *
+ * @property service
+ * @property jwtTokenUtils
+ */
 @Configuration
 @EnableMethodSecurity(securedEnabled = true, prePostEnabled = true)
 class SecurityConfig

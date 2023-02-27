@@ -5,6 +5,15 @@ import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table
 import java.util.*
 
+/**
+ * Modelo Empleado
+ *
+ * @property id
+ * @property name
+ * @property email
+ * @property departamentoId
+ * @property avatar
+ */
 @Table("EMPLEADOS")
 data class Empleado(
     @Id

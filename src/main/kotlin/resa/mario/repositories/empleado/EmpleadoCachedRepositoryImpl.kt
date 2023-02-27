@@ -13,6 +13,11 @@ import resa.mario.models.Empleado
 
 private val log = KotlinLogging.logger {}
 
+/**
+ * Repositorio encargado de realizar operaciones con Empleados
+ *
+ * @property repository
+ */
 @Repository
 class EmpleadoCachedRepositoryImpl
 @Autowired constructor(

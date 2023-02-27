@@ -18,6 +18,11 @@ import resa.mario.services.departamento.DepartamentoServiceImpl
 
 // IMPORTANTE, PARA SPRING SECURITY -> LOS METODOS DE LOS CONTROLADORES EN PUBLICO
 
+/**
+ * Controlador encargado de hacer las operaciones basicas de los departamentos
+ *
+ * @property service
+ */
 @RestController
 @RequestMapping(APIConfig.API_PATH + "/departamentos")
 class DepartamentoController

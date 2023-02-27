@@ -2,6 +2,10 @@ package resa.mario.config
 
 import org.springframework.context.annotation.Configuration
 
+/**
+ * Clase de configuracion con informacion basica de la API
+ *
+ */
 @Configuration
 class APIConfig {
     companion object {

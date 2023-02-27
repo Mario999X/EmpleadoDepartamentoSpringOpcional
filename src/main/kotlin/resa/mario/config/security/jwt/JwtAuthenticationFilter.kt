@@ -15,6 +15,13 @@ import resa.mario.dto.UsuarioDTOLogin
 import resa.mario.models.Usuario
 import java.util.*
 
+
+/**
+ * Clase encargada de autenticar los tokens segun el usuario
+ *
+ * @property jwtTokenUtils
+ * @property authenticationManager
+ */
 class JwtAuthenticationFilter(
     private val jwtTokenUtils: JwtTokenUtils,
     private val authenticationManager: AuthenticationManager

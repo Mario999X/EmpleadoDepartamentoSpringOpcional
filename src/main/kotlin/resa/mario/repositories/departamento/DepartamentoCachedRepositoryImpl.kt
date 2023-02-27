@@ -13,6 +13,11 @@ import org.springframework.stereotype.Repository
 
 private val log = KotlinLogging.logger {}
 
+/**
+ * Repositorio que realiza operaciones con Departamentos
+ *
+ * @property repository
+ */
 @Repository
 class DepartamentoCachedRepositoryImpl
 @Autowired constructor(

@@ -7,6 +7,12 @@ import resa.mario.models.Empleado
 import resa.mario.repositories.departamento.DepartamentoCachedRepositoryImpl
 import resa.mario.repositories.empleado.EmpleadoCachedRepositoryImpl
 
+/**
+ * Servicio encargado de realizar operaciones sobre Empleados, haciendo uso de los repositorios necesarios
+ *
+ * @property repository
+ * @property departamentoRepository
+ */
 @Service
 class EmpleadoServiceImpl
 @Autowired constructor(
