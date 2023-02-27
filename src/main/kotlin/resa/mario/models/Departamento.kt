@@ -1,10 +1,8 @@
 package resa.mario.models
 
-import kotlinx.serialization.Serializable
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
 
-@Serializable
 @Table("DEPARTAMENTOS")
 data class Departamento(
     @Id

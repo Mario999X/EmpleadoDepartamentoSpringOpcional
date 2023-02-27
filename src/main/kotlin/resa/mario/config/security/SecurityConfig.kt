@@ -62,7 +62,9 @@ class SecurityConfig
             // Para listar a los usuarios, se requeria un rol de ADMIN
             .requestMatchers("/usuarios/list").hasRole("ADMIN")
 
-            // El resto, se necesitara autenticacion estandar; en este caso, unicamente /me
+            // Como se pide en el enunciado, tanto aqui como en el propio controlador de departamentos
+            .requestMatchers("/departamentos/delete").hasRole("ADMIN")
+
             .anyRequest().authenticated()
 
             .and()
