@@ -27,21 +27,21 @@ class EmpleadoCachedRepositoryImpl
 
     @Cacheable("empleados")
     override suspend fun findById(id: Long): Empleado? = withContext(Dispatchers.IO) {
-        log.info { "Obteniendo departamento con id: $id" }
+        log.info { "Obteniendo empleado con id: $id" }
 
         return@withContext repository.findById(id)
     }
 
     @CachePut("empleados")
     override suspend fun save(entity: Empleado): Empleado = withContext(Dispatchers.IO) {
-        log.info { "Almacenando departamento: $entity" }
+        log.info { "Almacenando empleado: $entity" }
 
         return@withContext repository.save(entity)
     }
 
     @CachePut("empleados")
     override suspend fun update(id: Long, entity: Empleado): Empleado? = withContext(Dispatchers.IO) {
-        log.info { "Actualizando departamento con id: $id" }
+        log.info { "Actualizando empleado con id: $id" }
 
         var entityDB = repository.findById(id)
 
@@ -55,7 +55,7 @@ class EmpleadoCachedRepositoryImpl
 
     @CacheEvict("empleados")
     override suspend fun deleteById(id: Long): Empleado? = withContext(Dispatchers.IO) {
-        log.info { "Eliminando departamento con id: $id " }
+        log.info { "Eliminando empleado con id: $id " }
 
         val entityDB = repository.findById(id)
 

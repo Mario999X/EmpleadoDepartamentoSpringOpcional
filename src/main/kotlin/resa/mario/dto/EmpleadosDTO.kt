@@ -8,5 +8,5 @@ data class EmpleadoDTO(
     val name: String,
     val email: String,
     val departamentoId: String? = null,
-    val avatar: String?
+    val avatar: String? = null
 )
