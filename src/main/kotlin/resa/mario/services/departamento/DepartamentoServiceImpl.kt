@@ -9,11 +9,11 @@ import resa.mario.repositories.departamento.DepartamentoCachedRepositoryImpl
 import resa.mario.repositories.empleado.EmpleadoCachedRepositoryImpl
 
 @Service
-class DepartamentosServiceImpl
+class DepartamentoServiceImpl
 @Autowired constructor(
     private val repository: DepartamentoCachedRepositoryImpl,
     private val empleadosRepository: EmpleadoCachedRepositoryImpl
-) : DepartamentosService {
+) : DepartamentoService {
 
     override suspend fun findAll(): Flow<Departamento> {
         return repository.findAll()

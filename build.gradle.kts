@@ -44,8 +44,13 @@ dependencies {
 	//runtimeOnly("com.h2database:h2")
 	runtimeOnly("io.r2dbc:r2dbc-h2")
 	// Test
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.springframework.boot:spring-boot-starter-test") {
+		exclude(module = "mockito-core")
+	}
 	testImplementation("io.projectreactor:reactor-test")
+	testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+	// Mockk
+	testImplementation("com.ninja-squad:springmockk:4.0.0")
 	// Logs
 	implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
 	// JWT

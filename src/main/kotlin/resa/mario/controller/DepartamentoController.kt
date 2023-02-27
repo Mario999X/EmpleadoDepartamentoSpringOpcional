@@ -14,7 +14,7 @@ import resa.mario.dto.DepartamentoDTO
 import resa.mario.mappers.toDTO
 import resa.mario.mappers.toDepartamento
 import resa.mario.models.Usuario
-import resa.mario.services.departamento.DepartamentosServiceImpl
+import resa.mario.services.departamento.DepartamentoServiceImpl
 
 // IMPORTANTE, PARA SPRING SECURITY -> LOS METODOS DE LOS CONTROLADORES EN PUBLICO
 
@@ -22,7 +22,7 @@ import resa.mario.services.departamento.DepartamentosServiceImpl
 @RequestMapping(APIConfig.API_PATH + "/departamentos")
 class DepartamentoController
 @Autowired constructor(
-    private val service: DepartamentosServiceImpl,
+    private val service: DepartamentoServiceImpl,
 ) {
     @GetMapping("")
     suspend fun findAll(): ResponseEntity<List<DepartamentoDTO>> {

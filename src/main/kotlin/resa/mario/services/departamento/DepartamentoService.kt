@@ -3,7 +3,7 @@ package resa.mario.services.departamento
 import kotlinx.coroutines.flow.Flow
 import resa.mario.models.Departamento
 
-interface DepartamentosService {
+interface DepartamentoService {
     suspend fun findAll(): Flow<Departamento>
     suspend fun findById(id: Long): Departamento?
     suspend fun save(entity: Departamento): Departamento
