@@ -67,6 +67,8 @@ Se ha aplicado *Spring Security*.
 
 Para el cifrado de las contraseñas de los usuarios se ha usado la implementacion de Spring de Bcrypt.
 
+Posibilidad de realizar operaciones tanto con/sin SSL en distintos puertos.
+
 ## Almacenamiento
 
 Se ha implantado un sistema de almacenamiento propio de *Spring* para la subida de ficheros multiparte.

@@ -31,13 +31,12 @@ class SwaggerConfig {
             )
     }
 
-
     @Bean
     fun httpApi(): GroupedOpenApi {
         return GroupedOpenApi.builder()
             .group("http")
             .pathsToMatch("/api/**")
-            .displayName("HTTP-API Empleado-Departameto Spring")
+            .displayName("HTTP-API Empleado-Departamento Spring")
             .build()
     }
 }
